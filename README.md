@@ -19,6 +19,15 @@ redact('email username@example.com');
 
 redact('phone 123-456-7890');
 //=> 'phone'
+
+redact('Visa: 4242424242424242');
+//=> 'Visa:'
+
+redact('SSN: 000-00-0000');
+//=> 'SSN:'
+
+redact('IP Address: 192.168.0.1');
+//=> 'IP Address: ';
 ```
 
 
@@ -40,6 +49,21 @@ Type: `boolean`
 Default: `true`
 
 ##### stripPhone
+
+Type: `boolean`  
+Default: `true`
+
+##### stripSSN
+
+Type: `boolean`  
+Default: `true`
+
+##### stripCreditCard
+
+Type: `boolean`  
+Default: `true`
+
+##### stripIpAddress
 
 Type: `boolean`  
 Default: `true`
