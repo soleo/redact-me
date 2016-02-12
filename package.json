@@ -1,6 +1,6 @@
 {
   "name": "redact-me",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A utility collection of redacting email address, US phone number or something you don't want to show to others",
   "main": "index.js",
   "scripts": {

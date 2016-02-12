@@ -6,6 +6,7 @@ test('main', t => {
 	t.is(fn('Email: <username@example.com>'), 'Email: ');
 	t.is(fn('Email: username+extra@example.com'), 'Email: ');
 	t.is(fn('Email: username@example.com.cn'), 'Email: ');
+	t.is(fn('Email1: username1@example.com.cn Email2: username2@example.com.cn'), 'Email1:  Email2: ');
 
 	t.is(fn('US Phone: 123-456-7890'), 'US Phone: ');
 	t.is(fn('US Phone: (123) 456-7890'), 'US Phone: ');
@@ -15,6 +16,7 @@ test('main', t => {
 	t.is(fn('US Phone: (123)456-7890'), 'US Phone: ');
 	t.is(fn('US Phone: 123.456.7890'), 'US Phone: ');
 	t.is(fn('US Phone: 456.7890'), 'US Phone:');
+	t.is(fn('US Phone1: 456.7890 US Phone2: 456.7890'), 'US Phone1: US Phone2:');
 
 	// Credit Card Test Cases from Stripe
 	// Source: https://stripe.com/docs/testing
