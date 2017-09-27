@@ -1,5 +1,7 @@
 # redact-me [![Build Status](https://travis-ci.org/soleo/redact-me.svg?branch=master)](https://travis-ci.org/soleo/redact-me)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/soleo/redact-me.svg)](https://greenkeeper.io/)
+
 A utility collection of redacting email address, phone number or something you don't want to show to others
 
 ## Install
